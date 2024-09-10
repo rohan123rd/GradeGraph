@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="student-home.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Home</title>
+</head>
+<body id="main">
+    <header class="header">
+      <div class="left-section">
+        <div id="mySidenav" class="sidenav">
+          <a href="#" class="website-logo"><img src="website-logo.png"></a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <hr class="seperator">
+          <a class="home-page" href="student-home.html">Home</a>
+          <a href="student-attendance.html">Attendance</a>
+          <a href="student-marksheet.html">Marksheet</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <div class="website-name">
+        <p>GradeGraph</p>
+      </div>
+      <div class="right-section">
+        <img src="profile-photo.avif" class="profile-img">
+        <p>Name</p>  
+        <div class="dropdown" style="float:right;">
+          <button class="dropbtn" onclick="toggleDropdown()">&#129171</button>
+          <div id="myDropdown" class="dropdown-content">
+          <a href="login.html">Sign-out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <section>
+      <div class="container" >
+        <div class="chart">
+          <canvas id="barchart"></canvas>
+        </div>
+        <div class="chart" onclick="openAttendance()">
+          <canvas id="linechart"></canvas>
+        </div>
+      </div>
+
+      <div class="bottom-section">
+        <div class="left-bottom">
+          <h5>Classes Today</h5>
+          <hr>
+          <p>Lecture-1</p>
+          <p>Lecture-2</p>
+          <p>Lecture-3</p>
+          <p>Lecture-4</p>
+          <p>Lecture-5</p>
+          <p>Lecture-6</p>
+        </div>
+        <div class="middle-bottom">
+          <h1>Total Attendance</h1>
+          <hr>
+          <p>82%</p>
+        </div>
+        <div class="right-bottom">
+          <img src="profile-photo.avif">
+          <h4>Rohan Naghera</h4>
+          <hr>
+          <p>B.tech(Computer Engineering)</p>
+          <p>21SE02CE037</p>
+          <p>Student-ID 1201928372899128</p>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="student-home.js"></script>
+    <script src="marksheet-graph.js"></script>
+    <script src="attendance-graph.js"></script>
+</body>
+</html>

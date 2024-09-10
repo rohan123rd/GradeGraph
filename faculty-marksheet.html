@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="faculty-marksheet.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Marksheet</title>
+</head>
+<body id="main">
+    <header class="header">
+      <div class="left-section">
+        <div id="mySidenav" class="sidenav">
+          <a href="faculty-home.html" class="website-logo"><img src="website-logo.png"></a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <hr class="seperator">
+          <a href="faculty-home.html">Home</a>
+          <a href="faculty-attendance.html">Attendance</a>
+          <a class="marksheet-page" href="#">Marksheet</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      <div class="website-name">
+        <p>GradeGraph</p>
+      </div>
+      <div class="right-section">
+        <img src="profile-photo.avif" class="profile-img">
+        <p>Name</p>  
+        <div class="dropdown" style="float:right;">
+          <button class="dropbtn" onclick="toggleDropdown()">&#129171</button>
+          <div id="myDropdown" class="dropdown-content">
+          <a href="login.html">Sign-out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <section>
+      <div class="top-section">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Select Year
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">2023-2024</a></li>
+            <li><a class="dropdown-item" href="#">2022-2023</a></li>
+            <li><a class="dropdown-item" href="#">2021-2022</a></li>
+          </ul>
+        </div>
+
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Select section
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">A</a></li>
+            <li><a class="dropdown-item" href="#">B</a></li>
+            <li><a class="dropdown-item" href="#">C</a></li>
+          </ul>
+        </div>
+
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Select stream
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Computer Engineering</a></li>
+          <li><a class="dropdown-item" href="#">Computer Science and Engineering</a></li>
+          <li><a class="dropdown-item" href="#">Information Technology</a></li>
+          <li><a class="dropdown-item" href="#">Information Technology & Engineering</a></li>
+          <li><a class="dropdown-item" href="#">MLAI</a></li>
+          <li><a class="dropdown-item" href="#">Chemical Engineering</a></li>
+          <li><a class="dropdown-item" href="#">Civil Engineering</a></li>
+          <li><a class="dropdown-item" href="#">Mechanical Engineering</a></li>
+        </ul>
+      </div>
+
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Enrolment Number
+      </button>
+      <div class="dropdown-menu pre-scrollable" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">21SE02CE001</a>
+        <a class="dropdown-item" href="#">21SE02CE002</a>
+        <a class="dropdown-item" href="#">21SE02CE003</a>
+        <a class="dropdown-item" href="#">21SE02CE004</a>
+        <a class="dropdown-item" href="#">21SE02CE005</a>
+        <a class="dropdown-item" href="#">21SE02CE006</a>
+        <a class="dropdown-item" href="#">21SE02CE007</a>
+        <a class="dropdown-item" href="#">21SE02CE008</a>
+        <a class="dropdown-item" href="#">21SE02CE009</a>
+        <a class="dropdown-item" href="#">21SE02CE010</a>
+        <a class="dropdown-item" href="#">21SE02CE011</a>
+        <a class="dropdown-item" href="#">21SE02CE012</a>
+        <a class="dropdown-item" href="#">21SE02CE013</a>
+        <a class="dropdown-item" href="#">21SE02CE014</a>
+        <a class="dropdown-item" href="#">21SE02CE015</a>
+        <a class="dropdown-item" href="#">21SE02CE016</a>
+        <a class="dropdown-item" href="#">21SE02CE017</a>
+        <a class="dropdown-item" href="#">21SE02CE018</a>
+        <a class="dropdown-item" href="#">21SE02CE019</a>
+        <a class="dropdown-item" href="#">21SE02CE020</a>
+        <a class="dropdown-item" href="#">21SE02CE021</a>
+        <a class="dropdown-item" href="#">21SE02CE022</a>
+        <a class="dropdown-item" href="#">21SE02CE023</a>
+        <a class="dropdown-item" href="#">21SE02CE024</a>
+        <a class="dropdown-item" href="#">21SE02CE025</a>
+      </div>
+    </div>
+
+
+    <button type="button" class="btn btn-success">Write Marksheet</button>
+  </div>
+  
+  
+      <div class="bottom-section" style="overflow-x: auto;">
+        <p>Edit and upload marksheet here</p>
+      </div>
+    </section>
+
+    <script src="faculty-marksheet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

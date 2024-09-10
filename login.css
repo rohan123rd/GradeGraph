@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+  background: #FDF7E4;  
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+section {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  min-height: 91.4vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+  border: 2px solid #736647;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.container:hover {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: 2px solid #736647;
+  border-top-left-radius: 25px;
+  scale: 1.01;
+  box-shadow: -6px 6px 50px 2px rgba(231, 236, 166, 0.2) , 0px -6px 50px 2px rgba(231, 236, 166, 0.2);
+}
+
+.container img:hover {
+  opacity: .7;
+}
+
+.left-section {
+  width: 500px;
+  height: 600px;
+  background: #FAEED1;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 600px;
+  background: #ffffff;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.left-section img {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  transition: .2s;
+}
+
+.right-section p {
+  background-color: white;
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  padding-top: 60px;
+}
+
+select {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  margin-top: 40px;
+  border-radius: 5px;
+  color: black;
+  background: whitesmoke;
+}
+
+select:focus {
+  outline: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.username {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 5px;
+  color: black;
+  background: whitesmoke;
+}
+
+.username:focus {
+  outline: none;
+}
+
+.password {
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 5px;
+  color: black;
+  background: whitesmoke;
+}
+
+.password:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  background: #736647;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  margin-top: 8px;
+  background-color: white;
+}

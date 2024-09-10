@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="student-attendance.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Attendance</title>
+</head>
+<body id="main">
+  <header class="header">
+    <div class="left-section">
+      <div id="mySidenav" class="sidenav">
+        <a href="student-home.html" class="website-logo"><img src="website-logo.png"></a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <hr class="seperator">
+        <a class="home-page" href="student-home.html">Home</a>
+        <a class="attendance-page" href="#">Attendance</a>
+        <a href="student-marksheet.html">Marksheet</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <div class="website-name">
+      <p>GradeGraph</p>
+    </div>
+    <div class="right-section">
+      <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="profile-img">
+      <p>Name</p>  
+      <div class="dropdown" style="float:right;">
+        <button class="dropbtn" onclick="toggleDropdown()">&#129171</button>
+        <div id="myDropdown" class="dropdown-content">
+        <a href="login.html">Sign-out</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section>
+    <div class="top-section">
+      <div class="profile-div">
+        <img src="profile-photo.avif">
+        <h4>Rohan Naghera</h4>
+        <hr>
+        <p>B.tech(Computer Engineering)</p>
+        <p>21SE02CE037</p>
+        <p>Student-ID 1201928372899128</p>
+      </div>
+      
+      <div class="vl"></div>
+
+      <div class="progress-bar-div">
+        <h2>Attendance: 82%</h2>
+        <div class="container"> 
+          <div class="skill html">82%</div> 
+      </div> 
+      </div>
+    </div>
+
+
+    <div class="bottom-section" style="overflow-x: auto;">
+      <table>
+        <tr>
+          <th>S. No.</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="abscent"></td>
+          <td class="present"></td>
+          <td class="abscent"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td class="present"></td>
+          <td class="abscent"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td class="abscent"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="abscent"></td>
+          <td class="present"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td class="present"></td>
+          <td class="abscent"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6.</td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td class="present"></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <script src="student-attendance.js"></script>
+</body>
+</html>

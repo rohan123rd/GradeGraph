@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <title>Login</title>
+</head>
+<body>
+  <section>
+  <div class="container">
+    <div class="left-section">
+      <img src="website-logo.png">
+    </div>
+    <div class="right-section">
+      <p>GradeGraph</p>
+      <form class="RegForm" onsubmit="return redirectToHomePage()">
+        <select name="userType" id="userType">
+          <option value="default">--User-Type--</option>
+          <option value="faculty">Faculty</option>
+          <option value="student">Student</option>
+        </select>
+
+        <input class="username" name="Name" type="text" placeholder="Username" required>
+        <input class="password" name="Password" type="password" placeholder="Password" required>
+
+        <a href="#" class="forgot-password">Forgot Password</a>
+
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </div>
+  </section>
+
+  <script src="login.js"></script>
+</body>
+</html>

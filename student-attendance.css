@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #BBAB8C;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.header .profile-img {
+  width: 60px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
+  margin-right: 18px;
+}
+
+.website-name {
+  padding-left: 160px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 18px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.menu-bar  {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: 4px;
+}
+
+.website-name p {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Left Section */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #DED0B6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #BCA37F;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #c9b18f;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+.sidenav .attendance-page {
+  color: rgb(165, 115, 68);
+}
+
+.sidenav .attendance-page:hover {
+  color: rgb(196, 138, 84);
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 4px;
+  right: 25px;
+  font-size: 36px;
+  padding-inline-start: 0;
+  margin-left: 50px;
+}
+
+.sidenav .seperator {
+  height: 4px;
+  margin-top: 1px;
+}
+
+.sidenav img {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 65px;
+  margin-top: 6px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Drop down menu */
+.dropbtn {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding-left: 8px;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  right: 0;
+  background-color: #FAEED1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #5e5136;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  border-radius: 5px;
+  background:#FDF7E4;
+}
+
+.show {
+  display: block;
+}
+
+/* Main Section */
+
+section {
+  padding-top: 30px;
+  background: #FDF7E4;
+  display: grid;
+  grid-template-rows: 280px 1fr;
+  align-items: start;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 1200px;
+  height: 250px;
+  padding: 2rem;
+  border: 1px solid #DED0B6;
+  border-radius: 1rem;
+  background: #FAEED1;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-div img {
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-div hr {
+  background: #65451F;
+  height: 2.5px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.profile-div h4 {
+
+  padding-top: 0px;
+  font-size: 20px;
+  color: #65451F;
+}
+
+.profile-div p {
+  color: #65451F;
+  font-size: 14px;
+}
+
+.top-section .vl {
+  border-left: 3px solid #65451F;
+  height: 120%;
+  margin-left: 20px;
+} 
+
+.progress-bar-div .container { 
+  background-color: rgb(237, 214, 166); 
+  width: 80%; 
+  border-radius: 15px; 
+  margin-left: 30px;
+  width: 870px;
+  box-shadow: inset 0px 0px 10px rgba(151, 130, 81, 0.5);
+} 
+
+.progress-bar-div .skill { 
+  background-color: rgb(170, 147, 97); 
+  color: rgb(95, 77, 40); 
+  padding: 1%; 
+  text-align: center; 
+  font-size: 20px; 
+  border-radius: 15px; 
+  box-shadow: inset 0px 0px 10px rgba(117, 103, 43, 0.5);
+  margin-bottom: 65px;
+}
+
+.progress-bar-div .html { 
+  width: 82%; 
+} 
+
+.progress-bar-div h2 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: #65451F;
+}
+
+.bottom-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 1200px;
+  height: 390px;
+  padding: 2rem;
+  border: 1px solid #DED0B6;
+  border-radius: 1rem;
+  background: #FAEED1;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+}
+
+table, td, th { 
+  color: #65451F; 
+  border: 2px solid #ac965f;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+  padding-top: 5px;
+}
+
+.abscent {
+  background-image: repeating-linear-gradient(-45deg, rgba(255, 99, 132, 0.2) 0, rgba(255, 99, 132, 0.2) 10px, #FAEED1 10px, #FAEED1 20px);
+}
+
+.present {
+  background-image: repeating-linear-gradient(-45deg, rgba(181, 228, 140, 0.5) 0, rgba(181, 228, 140, 0.5) 8px, #FAEED1 10px, #FAEED1 20px);
+}
